@@ -1,0 +1,26 @@
+Welcome to chemutils!
+
+This library is pretty straight-forward to use, requiring just three steps to use in your project!
+
+Step #1: Generating the solution file.
+
+First of all, you will need to download premake5, if you don't have it already.
+After you have gotten it, run this command in the root directory(chemutils/):
+
+	premake5 vs2022(or vs2019, or your VS version)
+
+Afterwards, if the generation was successful, you should see a .sln file called "chemutils.sln".
+Open it, and wait for the solution to load in Visual Studio.
+
+Step #2: Building chemutils.
+
+Once it's loaded in, you can select whether you want to build a Debug build or a Release build. (Release comes with optimizations, Debug comes with symbols and no optimizations.)
+Afterwards, right-click on the project in the Solution Explorer and press Build(or Ctrl+(Shift)+B) and wait for it to compile.
+
+Step #3: Using chemutils in your project.
+
+After it has compiled, go to the directory build/bin, and there you can find the built library. Put that directory into your additional library directories,
+and add the .lib file's full name(name+extension) into your additional dependencies. After you've done that, put the src/ folder into your additional include directories.
+
+
+After you've done those three steps, you should be ready to use chemutils in your project!
